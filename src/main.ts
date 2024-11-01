@@ -98,8 +98,12 @@ function calculateKarbitScore(name: string, stopIds: number[]) {
   }
 }
 
-await setup()
-loadStops()
+async function bootstrap() {
+  await setup()
+  loadStops()
+}
+
+bootstrap()
 
 document.querySelector('form')?.addEventListener('submit', (e) => {
   e.preventDefault()
