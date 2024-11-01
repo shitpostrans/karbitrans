@@ -15,7 +15,7 @@ async function setup() {
 
   const decoded = decodeFromBase64(hash)
   const [name,, score, title, date] = decoded.split(';')
-  const parsedDate = new Date(date)
+  const parsedDate = new Date(Number.parseInt(date))
   const qrCodeDataURL = await QRCode.toDataURL(window.location.href, { margin: 0, color: { light: '#00000000' } })
 
   document.querySelector('#name')!.textContent = decodeURI(name)
