@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KarbiTije</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body class="flex items-center justify-center lg:p-8 min-h-screen bg-orange-100 font-medium text-orange-950">
+    <h1 class="hidden">KarbiTrans</h1>
+    <div class="bg-orange-50 rounded-lg p-8 shadow shadow-orange-200 w-screen max-w-4xl grid grid-cols-12 gap-x-4 gap-y-8">
+      <div class="flex gap-2 items-center justify-between col-span-12">
+        <img src="/karbitrans.svg" class="h-16" alt="Karbitrans Logo, with the color orange and tangerine" />
+        <h2 class="text-2xl font-bold">Sertifikat Karbit</h2>
+      </div>
+      <div class="loading col-span-12 flex items-center justify-center p-4 min-h-32 flex-col">
+        <div class="rounded-full border-8 border-orange-500 border-r-transparent w-16 h-16 spin animate-spin will-change-transform"></div>
+        <span class="font-bold text-center mt-2">Memuat Hasil</span>
+      </div>
+      <div class="not-found col-span-12 items-center justify-center p-4 min-h-32 flex-col hidden">
+        <span class="font-bold text-6xl text-orange-500">404</span>
+        <span class="font-bold text-center mt-2">Hasil Tidak Ditemukan</span>
+        <a href="/" class="bg-orange-500 px-6 py-4 rounded-full font-bold text-orange-50 hover:bg-orange-600 hover:shadow-lg hover:shadow-orange-200 group flex gap-2 mt-6">
+          Kembali ke Awal
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
+        </a>
+      </div>
+      <div class="result col-span-12 items-center justify-center min-h-32 flex-col hidden">
+        <p class="font-medium text-lg max-w-lg text-center">
+          Dengan bangga Kami mengakui bahwa entitas<br />
+          <span id="name" class="font-bold text-orange-500 text-2xl border-b-2 border-orange-500 px-8 min-w-4 inline-block mb-4 mt-2"></span> </br>
+          telah berhasil menyelesaikan <span class="font-bold text-orange-500">Tes Kekarbitan</span> dengan nilai <span id="score" class="font-bold text-orange-500"></span> dan berhasil mendapatkan gelar</br>
+          <span id="title" class="font-bold text-orange-500 text-4xl px-8 min-w-4 inline-block mb-4"></span> </br>
+          Semoga sertifikat ini dapat digunakan dengan semestinya dan sesuai peruntukannya
+        </p>
+        <div class="mt-12 w-full">
+          <p>Halte Puri Beta 2, <span id="date"></span></p>
+          <div class="flex mt-2 gap-4 items-end">
+            <div class="flex flex-col">
+              <div class="pb-16 w-48 border-b border-b-orange-950"></div>
+              <span class="mt-2 font-bold">Tim J.E.</span>
+              <span class="-mt-1">Eternal Leader</span>
+            </div>
+            <div class="flex flex-col">
+              <div class="pb-16 w-48 border-b border-b-orange-950"></div>
+              <span class="mt-2 font-bold">Dukuh Bawah</span>
+              <span class="-mt-1">Proktor</span>
+            </div>
+            <img class="h-32 w-32 object-contain ml-auto" id="qr-code" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/result-page.ts"></script>
+  </body>
+</html>
