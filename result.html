@@ -10,9 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/src/style.css" />
   </head>
-  <body class="flex items-center justify-center lg:p-8 min-h-screen bg-orange-100 font-medium text-orange-950">
+  <body class="flex items-center justify-center lg:p-8 min-h-screen bg-orange-100 font-medium text-orange-950 print:bg-white print:text-black print:block print:p-0">
     <h1 class="hidden">KarbiTrans</h1>
-    <div class="bg-orange-50 rounded-lg px-4 py-8 lg:px-8 shadow shadow-orange-200 w-screen max-w-5xl flex flex-col md:grid md:grid-cols-12 gap-x-4 gap-y-8 min-h-screen lg:min-h-0">
+    <div class="bg-orange-50 rounded-lg px-4 py-8 lg:px-8 shadow shadow-orange-200 w-screen max-w-5xl flex flex-col md:grid md:grid-cols-12 gap-x-4 gap-y-8 min-h-screen lg:min-h-0 print:bg-transparent print:max-w-none print:shadow-none print:h-screen print:py-4">
       <div class="flex flex-col md:flex-row gap-2 items-center md:justify-between col-span-12">
         <img src="/karbitrans.svg" class="h-16 object-contain" alt="Karbitrans Logo, with the color orange and tangerine" />
         <h2 class="text-2xl font-bold">Sertifikat Karbit</h2>
@@ -37,7 +37,7 @@
           <span id="title" class="font-bold text-orange-500 text-4xl px-8 min-w-4 inline-block mb-4"></span> </br>
           Semoga sertifikat ini dapat digunakan dengan semestinya dan sesuai peruntukannya
         </p>
-        <div class="mt-12 w-full">
+        <div class="mt-12 w-full print:mt-auto">
           <p>Halte Puri Beta 2, <span id="date"></span></p>
           <div class="flex flex-col md:flex-row mt-2 gap-4 md:items-end">
             <div class="flex flex-col">
