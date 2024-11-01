@@ -27,7 +27,17 @@ async function setup() {
   document.querySelector('.loading')?.classList.add('hidden')
   document.querySelector('.result')?.classList.remove('hidden')
   document.querySelector('.result')?.classList.add('flex')
+  document.querySelector('.buttons')?.classList.remove('hidden')
+  document.querySelector('.buttons')?.classList.add('flex')
 
 }
 
 setup()
+
+document.querySelector('#share')?.addEventListener('click', () => {
+  navigator.share({
+    title: 'Sertifikat Kekarbitan - KarbiTije',
+    url: window.location.href,
+    text: 'Ini sertifikat kekarbitan gue, mana punya lo?'
+  })
+})
