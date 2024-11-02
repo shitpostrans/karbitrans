@@ -6,7 +6,7 @@ id,stopname,line,popularity
 5,Taman Sari,1,4
 6,Galunggung,2,5
 7,Bermis,2,4
-8,Galur,2,3
+8,Galur,2,1
 9,Pedongkelan,2,3
 10,Pulo Gadung,2,4
 11,Kalideres,3,4
@@ -18,4 +18,16 @@ id,stopname,line,popularity
 17,Pasar Enjo,11,2
 18,Jembatan Item,14,2
 19,Arteri,8,2
-20,Galur,2,2
+20,Trikora,7,1
+21,Pasar Induk,7,2
+22,Mambo,10,2
+23,Tegalan,5,2
+24,Jembatan Item,14,1
+25,Sumur Batu,2,2
+26,Flyover Raya Bogor,7,4
+27,Gelanggang Remaja,7,1
+28,Puri Beta 1,13,1
+29,Danau Sunter,14,1
+30,Makasar,9,2
+31,Ciliwung,9,1
+32,Landasan Pacu,14,1
