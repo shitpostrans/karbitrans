@@ -166,8 +166,11 @@ document.querySelector('#next-button')?.addEventListener('click', (e) => {
       document.querySelector('#prev-button')!.classList.add('flex')
 
       document.querySelector('#disclaimer')?.classList.add('hidden')
+      document.querySelector('.socials')?.classList.add('hidden')
+      document.querySelector('.socials')?.classList.remove('flex')
       document.querySelector('.step-1')?.classList.add('hidden')
       document.querySelector('.step-2')?.classList.remove('hidden')
+
 
       currentStep += 1
     }
@@ -219,6 +222,8 @@ document.querySelector('#prev-button')?.addEventListener('click', (e) => {
     prevButton.classList.remove('flex')
 
     document.querySelector('#disclaimer')?.classList.remove('hidden')
+    document.querySelector('.socials')?.classList.remove('hidden')
+    document.querySelector('.socials')?.classList.add('flex')
     document.querySelector('.step-1')?.classList.remove('hidden')
     document.querySelector('.step-2')?.classList.add('hidden')
 
