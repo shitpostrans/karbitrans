@@ -9,7 +9,7 @@ export class Karbitculator {
     [60, 90, 'Pengguna Harian'],
     [90, 95, 'Karbit'],
     [95, 100, 'Karbit Abis'],
-    [100, 100, '100% Abis']
+    [100, 101, '100% Karbit']
   ]
 
   constructor (maxStopPopularityScore = 5, maxStopCount = 3) {
