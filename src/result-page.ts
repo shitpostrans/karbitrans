@@ -36,7 +36,7 @@ setup()
 
 document.querySelector('#share')?.addEventListener('click', () => {
   navigator.share({
-    title: 'Sertifikat Kekarbitan - KarbiTije',
+    title: 'Sertifikat Karbit - KarbiTije',
     url: window.location.href,
     text: 'Ini sertifikat kekarbitan gue, mana punya lo?'
   })
