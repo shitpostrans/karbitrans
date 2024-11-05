@@ -6,7 +6,8 @@ export class Karbitculator {
   private scoreTable: ScoreTableEntry[] = [
     [0, 50, 'Timje-ers Sejati'],
     [50, 60, 'Sobat Kepotong Dobel Lodek'],
-    [60, 90, 'Pengguna Harian'],
+    [60, 80, 'Pengguna Harian'],
+    [80, 90, 'Gejala Karbit'],
     [90, 95, 'Karbit'],
     [95, 100, 'Karbit Abis'],
     [100, 101, '100% Karbit']
